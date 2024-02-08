@@ -17,6 +17,12 @@ section {
 .meal {
   margin-bottom: 30px;
 }
+
+.active {
+  color: darkblue;
+  display: block !important;
+}
+
 .top-item {
   display: flex;
   align-items: flex-end;
@@ -41,6 +47,36 @@ section {
   flex: 0 auto;
   margin-left: 8px;
 }
+
+.item-line.active {
+  background-color: darkblue;
+}
+
 #receipe {
   width: 75%;
+}
+
+.img-container {
+  z-index: 11;
+  width: 30vw;
+  background-color: var(--pink-lemonade);
+  cursor: zoom-in;
+  object-fit: cover;
+  border: 0 solid #000;
+  display: none;
+  position: fixed;
+  top: auto;
+  bottom: 5%;
+  left: auto;
+  right: 5%;
+  transition: 0.3s ease;
+}
+
+.img-container:hover {
+  width: 40vw;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 0.8vw;
 }
